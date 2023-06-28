@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总结报告</title>
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+ <!-- Bootstrap core CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- Material Design Bootstrap -->
+ <link rel="stylesheet" href="css/mdb.min.css">
+ <!-- Your custom styles (optional) -->
+ <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+    <main>
+    <div box="biaoti" style="text-align: center;">
+    <h1>《Web应用基础》课程结业报告</h1></div>
+    <hr>
+    <!--报告需阐述：做的什么、开发过程、遇到的问题、如何解决、哪些未解决、总结（特别强调，对遇到问题的描述、
+        如何解决的以及项目的总结是重点加分项-->
+   
+    <h2>一：主题</h2>
+    <h4>
+        &nbsp;&nbsp;&nbsp;&nbsp;本网站采用 MDB 框架,构建了一个以人物枫原万叶为主题的网站，可以网页之间可页间跳转，各个内容模块可在一个长页面中显示。
+    </h4>
+    <h2>
+        二：开发过程 [主要代码]
+    </h2>
+    
+     <h4>（1）导航栏：可实现定位追踪到相关区块</h4>
+     <textarea rows="15" cols="110" >
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#">主页</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto smooth-scroll">
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about" data-offset="90">人物简介</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#story" data-offset="90">人物故事</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery" data-offset="90">人物图集</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#connection" data-offset="30">人物关系</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#words" data-offset="90">人物语录</a>
+                  </li>
+                </ul>
+      
+                <!-- Social Icon  -->
+                <ul class="navbar-nav nav-flex-icons">
+                  <li class="nav-item">
+                    <a class="nav-link">
+                      <a href="baogao.html">报告总结</a>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+     </textarea>
+
+     <section>
+
+     <h4>（2）区域块：各内容代码</h4>
+     <textarea rows="25" cols="110">
+        eg：人物介绍代码
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">来自稻妻的浪人武士，游历天下的南十字船员</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">心至 ⌈空⌋ 处，天地万物皆为 ⌈空⌋;   
+            心至⌈净⌋处，万物天地皆为 ⌈净⌋。
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-lg-5 text-center text-lg-left">
+            <img class="img-fluid" src="picture/人物图片.jpeg"
+              alt="Sample image">
+              <a href="https://www.bilibili.com/video/BV1364y197Kt/?spm_id_from=333.337.search-card.all.click"><h5>角色演示</h5></a>
+          </div>
+          <div class="col-lg-7">
+            <!-- Grid row -->
+            <div class="row mb-3">
+              <div class="col-1">
+                <i class="fas fa-share fa-lg orange-text"></i>
+              </div>
+              <div class="col-xl-10 col-md-11 col-10">
+                <h5 class="font-weight-bold mb-3">简介</h5>
+                <p class="grey-text">姓名：枫原万叶  </p>
+                <p class="grey-text">中文配音：斑马</p>
+                <p class="grey-text">生日：10月29日</p>
+                <p class="grey-text">神之眼：风</p>
+                <p class="grey-text">命之座：枫红座</p>
+              </div>        
+            </div>
+            <div class="row mb-3">
+              <!-- Grid column -->
+              <div class="col-1">
+                <i class="fas fa-share fa-lg orange-text"></i>
+              </div>
+              <div class="col-xl-10 col-md-11 col-10">
+                <h5 class="font-weight-bold mb-3">性格特点</h5>
+                <p class="grey-text">  万叶性情温和而洒脱，心中埋藏着许多往事。不知是风雨磨平了少年人的棱角，还是本性内敛的他藏起了自己的锋芒。万叶的个性平和，闲时酷爱吟诗，与人谈话时总是一副悠然模样 。他喜欢性格爽朗的人，这样相处时可以畅所欲言。他能够听到自然万物的声音，其中也包括对方的声音 。武士们都愿自己一生热烈，以手中之刀博取无上名誉。但其中总有人受欲念引诱，偏离“仁”与“义”的正道，挥刀留下无穷的仇恨。上天赋予众生血肉，神明护佑他们的生命，不是为了让人举刀相争的。他所握的，不应当是杀人刀，而应是活人剑。终武士一生，须守一道，这便是万叶的“道”。</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <i class="fas fa-share fa-lg orange-text"></i>
+              </div>
+              <div class="col-xl-10 col-md-11 col-10">
+                <h5 class="font-weight-bold mb-3">身份背景</h5>
+                <p class="grey-text mb-0">雷电五传是曾经稻妻最为顶尖的五个锻刀流派，在稻妻光华容彩祭节日期间，为了探究一心传被陷害的真相，万叶等人调查了枫原家的旧物，从曾祖父遗留的字条中得知了曾经锻刀失败的真相和陷害雷电五传的真凶。虽然技艺失传，所幸枫原家还有后人——枫原万叶。</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+          </div>
+        </div>
+      </div>
+      eg:人物关系代码
+          <!-- Section:  connection -->
+    <section id="connection" class="text-center py-5" style="background-color: #eee;">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold my-5">人物关系</h2>
+        <!-- Grid row -->
+        <div class="row">
+  
+          <!--Carousel Wrapper-->
+          <div id="multi-item-example" class="carousel testimonial-carousel slide carousel-multi-item mb-5"
+            data-ride="carousel">
+  
+            <!--Controls-->
+            <div class="controls-top">
+              <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="prev"><i
+                  class="fas fa-chevron-left"></i></a>
+              <a class="btn-floating yellow darken-4" href="#multi-item-example" data-slide="next"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+            <!--Controls-->
+  
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#multi-item-example" data-slide-to="0" class="active yellow darken-4"></li>
+              <li data-target="#multi-item-example" data-slide-to="1" class="light-blue darken-4"></li>
+         
+            </ol>
+            <!--Indicators-->
+  
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+  
+              <!--First slide-->
+              <div class="carousel-item active">
+  
+                <!--Grid column-->
+                <div class="col-md-4">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img src="picture/友人.png"
+                        class="rounded-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold mt-4">友人</h4>
+                    <h6 class="blue-text font-weight-bold my-3">雷系神之眼</h6>
+                    <p class="font-weight-normal"><i class="fas fa-quote-left pr-2"></i>万叶在旅途中结识的挚友，两人一度结伴同行。眼狩令颁布后，他向眼狩令的执行者九条裟罗发起御前决斗，落败身亡。万叶在他死时取走了熄灭的神之眼，此后一直找寻着能再次点亮这枚神之眼的人 。</p>
+                    <!--Review-->
+                  </div>
+                </div>
+                <!--Grid column-->
+  
+                <!--Grid column-->
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img src="picture/北斗.png"
+                        class="rounded-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold mt-4">北斗</h4>
+                    <h6 class="blue-text font-weight-bold my-3">南十字船船长</h6>
+                    <p class="font-weight-normal"><i class="fas fa-quote-left pr-2"></i>武装舰队南十字的首领。收留了从稻妻逃出来的万叶，并在万叶最困难的那段时期里，给了他重返稻妻的勇气。她是万叶和所有船员可以托付后背的战友</p>
+                    <!--Review-->
+                  </div>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img src="picture/五郎.png"
+                        class="rounded-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold mt-4">五郎</h4>
+                    <h6 class="blue-text font-weight-bold my-3">反抗军大将</h6>
+                    <p class="font-weight-normal"><i class="fas fa-quote-left pr-2"></i>珊瑚宫反抗军的大将。万叶在反抗军躲避通缉时，与五郎短暂的接触，对他的印象很深刻。五郎是那种有话就说的直性子，与部下同甘共苦，为朋友两肋插刀，与万叶很合得来.</p>
+                    <!--Review-->
+                  </div>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--First slide-->
+  
+              <!--Second slide-->
+              <div class="carousel-item">
+  
+                <!--Grid column-->
+                <div class="col-md-4">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img src="picture/九条.png"
+                        class="rounded-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold mt-4">九条裟罗</h4>
+                    <h6 class="blue-text font-weight-bold my-3">天领奉行大将</h6>
+                    <p class="font-weight-normal"><i class="fas fa-quote-left pr-2"></i>天领奉行的大将。万叶认可裟罗的实力，但无法原谅她用这样的力量为虎作伥 。眼狩令结束后，万叶了解到她也有自己坚持的信念，对她有所改观。</p>
+                    <!--Review-->
+                  </div>
+                </div>
+                <!--Grid column-->
+  
+                <!--Grid column-->
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img src="picture/心海.png"
+                        class="rounded-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold mt-4">珊瑚宫心海</h4>
+                    <h6 class="blue-text font-weight-bold my-3">现海祈岛人神巫女</h6>
+                    <p class="font-weight-normal"><i class="fas fa-quote-left pr-2"></i>海祇岛珊瑚宫的现人神巫女。万叶在被通缉的那段时间里，反抗军给了他许多帮助。他在反抗军的时候，周围的同伴无不对心海充满敬仰</p>
+                    <!--Review--> 
+                  </div>
+                </div>
+                <!--Grid column-->
+  
+                <!--Grid column-->
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                      <img src="/旅行者.png"
+                        class="rounded-circle img-fluid">
+                    </div>
+                    <!--Content-->
+                    <h4 class="font-weight-bold mt-4">荧/空</h4>
+                    <h6 class="blue-text font-weight-bold my-3">旅行者</h6>
+                    <p class="font-weight-normal"><i class="fas fa-quote-left pr-2"></i>璃月的异乡人英雄，两人于武道会结识，万叶向他(她)诉说了与友人的过去 。在稻妻，两人一同辅助反抗军对抗眼狩令 。天守阁一战，万叶为救空的迫切之心使他点亮了友人的神之眼，挡下了将军斩向空的无想的一刀</p>
+                    <!--Review-->
+                  </div>
+                </div>
+                <!--Grid column-->
+                </div>
+              <!--Third slide-->
+            </div>
+            <!--Slides-->
+          </div>
+          <!--Carousel Wrapper-->
+        </div>
+        <!-- Grid row -->
+    </textarea>
+    </section>
+
+    <section>
+        <h2>三：遇到的问题和如何解决</h2>
+        <ul><h4>(1) 遇到的问题
+            <li>
+                布局错乱，图片分布杂乱无章。
+            </li>
+            <li>导航栏防止报告无法实现跳转到报告的界面
+            </li>
+        <li>文本内容对照不齐</li>
+        </h4>
+        </ul>
+        <ul><h4>(2) 解决方式
+            <li>
+                采用栅格布局，合理放置图片位置
+            </li>
+            <li>将报告以图标形式，用网页链接实现跳转
+            </li>
+        <li>将文本放入弹性盒子</li></h4>
+        </ul>
+    </section>
+
+    <section>
+    <h2>四：项目总结</h2>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;
+        本项目通过学习了HTML,CSS，JavaScript等技术，实现了网页的设计建立。本项目以人物枫原万叶为主题，分别制作了主页和人物的五个部分：人物简介，人物故事，人物图集，人物关系，人物语录。主页剪辑角色PV，做成动态的视频主页背景。人物介绍部分有网页跳转，点击“角色演示”可以跳转到网页播放角色演示视频；人物故事选择三个经典故事总结均匀分布在网页；人物图集采用栅格布局展示；人物关系采取人物头像＋简介的方式，可自动播放，点击<,>可以滑动；人物语录采用卡片的形式，在卡片上将内容以无序表单的形式呈现。右上角是总结报告，点击可跳转界面查阅项目报告。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        整个网页全屏显示，可上下滑动，导航栏固定在顶部，可通过点击导航栏快速滑动到相应区域。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        通过此次的学习，不仅了解了如何在前端开发一个网站，而且学习到了很多新知识，学会利用各种框架设计网页，掌握了部分开发软件以及相关技术。
+    </h4>
+
+    </section>
+
+</div>
+    </main>
+</body>
+</html>
